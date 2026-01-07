@@ -14,13 +14,19 @@ import {
 import Sidebar from './components/Sidebar';
 import DocumentRow from './components/DocumentRow';
 import DocumentModal from './components/DocumentModal';
+import Login from './components/Login';
 import { Category, ModuleView, Document } from './types';
 import { MOCK_DOCUMENTS } from './constants';
 
 const App: React.FC = () => {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [currentView, setCurrentView] = useState<ModuleView>('home');
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedDoc, setSelectedDoc] = useState<Document | null>(null);
+
+  if (!isAuthenticated) {
+    return <Login onLogin={() => setIsAuthenticated(true)} />;
+  }
 
   const handleNavigate = (view: ModuleView) => {
     setCurrentView(view);
