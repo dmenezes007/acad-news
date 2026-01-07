@@ -38,7 +38,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
               ACAD VIEW
             </h1>
             <p className="text-sm text-slate-600 font-medium">
-              Acesso Restrito ao Coordenador da Academia do INPI
+              Acesso Restrito à Coordenação da Academia do INPI
             </p>
           </div>
 
