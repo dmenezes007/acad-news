@@ -91,13 +91,13 @@ const App: React.FC = () => {
           onClick={() => handleNavigate(Category.POS_GRADUACAO)}
           className="group relative h-96 bg-white border border-slate-200 rounded-[2rem] p-8 shadow-sm hover:shadow-xl hover:border-blue-400 transition-all duration-500 cursor-pointer overflow-hidden flex flex-col"
           style={{
-            backgroundImage: 'linear-gradient(rgba(148, 163, 184, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(148, 163, 184, 0.05) 1px, transparent 1px)',
+            backgroundImage: 'linear-gradient(rgba(148, 163, 184, 0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(148, 163, 184, 0.15) 1px, transparent 1px)',
             backgroundSize: '20px 20px'
           }}
         >
           
           <div className="relative z-10 h-full flex flex-col">
-            <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-auto group-hover:rotate-12 transition-transform duration-300 overflow-hidden p-2">
+            <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-auto transition-transform duration-300 overflow-hidden p-2">
               <img src="https://img.icons8.com/3d-fluency/94/graduation-cap.png" alt="" className="w-full h-full object-contain" />
             </div>
             
@@ -110,10 +110,6 @@ const App: React.FC = () => {
               </div>
             </div>
           </div>
-          
-          <div className="absolute bottom-0 right-0 opacity-5 scale-150 group-hover:scale-[1.7] transition-transform duration-700 w-64 h-64">
-             <img src="https://img.icons8.com/3d-fluency/94/graduation-cap.png" alt="" className="w-full h-full object-contain" />
-          </div>
         </div>
 
         {/* Quadrant 2: Inovação */}
@@ -121,14 +117,14 @@ const App: React.FC = () => {
           onClick={() => handleNavigate(Category.INOVACAO)}
           className="group relative h-96 bg-white border border-slate-200 rounded-[2rem] p-8 shadow-sm hover:shadow-xl hover:border-cyan-400 transition-all duration-500 cursor-pointer overflow-hidden flex flex-col"
           style={{
-            backgroundImage: 'linear-gradient(rgba(148, 163, 184, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(148, 163, 184, 0.05) 1px, transparent 1px)',
+            backgroundImage: 'linear-gradient(rgba(148, 163, 184, 0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(148, 163, 184, 0.15) 1px, transparent 1px)',
             backgroundSize: '20px 20px'
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-br from-cyan-50/20 to-transparent pointer-events-none"></div>
           
           <div className="relative z-10 h-full flex flex-col">
-            <div className="w-16 h-16 bg-cyan-100 rounded-2xl flex items-center justify-center mb-auto group-hover:rotate-12 transition-transform duration-300 overflow-hidden p-2">
+            <div className="w-16 h-16 bg-cyan-100 rounded-2xl flex items-center justify-center mb-auto transition-transform duration-300 overflow-hidden p-2">
               <img src="https://img.icons8.com/3d-fluency/94/rocket.png" alt="" className="w-full h-full object-contain" />
             </div>
             
@@ -141,10 +137,6 @@ const App: React.FC = () => {
               </div>
             </div>
           </div>
-
-          <div className="absolute bottom-0 right-0 opacity-5 scale-150 group-hover:scale-[1.7] transition-transform duration-700 w-64 h-64">
-             <img src="https://img.icons8.com/3d-fluency/94/rocket.png" alt="" className="w-full h-full object-contain" />
-          </div>
         </div>
 
         {/* Quadrant 3: Educação */}
@@ -152,13 +144,13 @@ const App: React.FC = () => {
           onClick={() => handleNavigate(Category.EDUCACAO_CORPORATIVA)}
           className="group relative h-96 bg-white border border-slate-200 rounded-[2rem] p-8 shadow-sm hover:shadow-xl hover:border-amber-400 transition-all duration-500 cursor-pointer overflow-hidden flex flex-col"
           style={{
-            backgroundImage: 'linear-gradient(rgba(148, 163, 184, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(148, 163, 184, 0.05) 1px, transparent 1px)',
+            backgroundImage: 'linear-gradient(rgba(148, 163, 184, 0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(148, 163, 184, 0.15) 1px, transparent 1px)',
             backgroundSize: '20px 20px'
           }}
         >
           
           <div className="relative z-10 h-full flex flex-col">
-            <div className="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center mb-auto group-hover:rotate-12 transition-transform duration-300 overflow-hidden p-2">
+            <div className="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center mb-auto transition-transform duration-300 overflow-hidden p-2">
               <img src="https://img.icons8.com/3d-fluency/94/open-book.png" alt="" className="w-full h-full object-contain" />
             </div>
             
@@ -171,10 +163,6 @@ const App: React.FC = () => {
               </div>
             </div>
           </div>
-
-          <div className="absolute bottom-0 right-0 opacity-5 scale-150 group-hover:scale-[1.7] transition-transform duration-700 w-64 h-64">
-             <img src="https://img.icons8.com/3d-fluency/94/open-book.png" alt="" className="w-full h-full object-contain" />
-          </div>
         </div>
 
         {/* Quadrant 4: Biblioteca */}
@@ -182,13 +170,13 @@ const App: React.FC = () => {
           onClick={() => handleNavigate(Category.BIBLIOTECA)}
           className="group relative h-96 bg-white border border-slate-200 rounded-[2rem] p-8 shadow-sm hover:shadow-xl hover:border-emerald-400 transition-all duration-500 cursor-pointer overflow-hidden flex flex-col"
           style={{
-            backgroundImage: 'linear-gradient(rgba(148, 163, 184, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(148, 163, 184, 0.05) 1px, transparent 1px)',
+            backgroundImage: 'linear-gradient(rgba(148, 163, 184, 0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(148, 163, 184, 0.15) 1px, transparent 1px)',
             backgroundSize: '20px 20px'
           }}
         >
           
           <div className="relative z-10 h-full flex flex-col">
-            <div className="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mb-auto group-hover:rotate-12 transition-transform duration-300 overflow-hidden p-2">
+            <div className="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mb-auto transition-transform duration-300 overflow-hidden p-2">
               <img src="https://img.icons8.com/3d-fluency/94/book.png" alt="" className="w-full h-full object-contain" />
             </div>
             
@@ -200,10 +188,6 @@ const App: React.FC = () => {
                 Ver Módulo <ArrowRight size={16} />
               </div>
             </div>
-          </div>
-
-          <div className="absolute bottom-0 right-0 opacity-5 scale-150 group-hover:scale-[1.7] transition-transform duration-700 w-64 h-64">
-             <img src="https://img.icons8.com/3d-fluency/94/book.png" alt="" className="w-full h-full object-contain" />
           </div>
         </div>
       </div>
