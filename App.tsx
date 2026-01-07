@@ -80,7 +80,7 @@ const App: React.FC = () => {
           </div>
         </div>
         <div className="w-full md:w-1/3 flex justify-center z-10">
-           <LayoutGrid size={180} className="text-slate-800" />
+          <div className="text-[180px] leading-none">📊</div>
         </div>
       </div>
 
@@ -94,8 +94,8 @@ const App: React.FC = () => {
           <div className="absolute top-0 right-0 w-64 h-64 bg-blue-50/50 rounded-full -mr-20 -mt-20 group-hover:scale-110 transition-transform duration-700"></div>
           
           <div className="relative z-10 h-full flex flex-col">
-            <div className="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-auto group-hover:rotate-12 transition-transform duration-300">
-              <GraduationCap size={32} />
+            <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-auto group-hover:rotate-12 transition-transform duration-300 text-4xl">
+              🎓
             </div>
             
             <div>
@@ -108,8 +108,8 @@ const App: React.FC = () => {
             </div>
           </div>
           
-          <div className="absolute bottom-12 right-12 opacity-5 scale-150 group-hover:scale-[1.7] transition-transform duration-700">
-             <GraduationCap size={160} />
+          <div className="absolute bottom-12 right-12 opacity-5 scale-150 group-hover:scale-[1.7] transition-transform duration-700 text-[160px] leading-none">
+             🎓
           </div>
         </div>
 
@@ -121,8 +121,8 @@ const App: React.FC = () => {
           <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-50/50 rounded-full -mr-20 -mt-20 group-hover:scale-110 transition-transform duration-700"></div>
           
           <div className="relative z-10 h-full flex flex-col">
-            <div className="w-16 h-16 bg-cyan-100 text-cyan-600 rounded-2xl flex items-center justify-center mb-auto group-hover:rotate-12 transition-transform duration-300">
-              <Rocket size={32} />
+            <div className="w-16 h-16 bg-cyan-100 rounded-2xl flex items-center justify-center mb-auto group-hover:rotate-12 transition-transform duration-300 text-4xl">
+              🚀
             </div>
             
             <div>
@@ -135,8 +135,8 @@ const App: React.FC = () => {
             </div>
           </div>
 
-          <div className="absolute bottom-12 right-12 opacity-5 scale-150 group-hover:scale-[1.7] transition-transform duration-700 text-cyan-600">
-             <Rocket size={160} />
+          <div className="absolute bottom-12 right-12 opacity-5 scale-150 group-hover:scale-[1.7] transition-transform duration-700 text-[160px] leading-none">
+             🚀
           </div>
         </div>
 
@@ -148,8 +148,8 @@ const App: React.FC = () => {
           <div className="absolute top-0 right-0 w-64 h-64 bg-amber-50/50 rounded-full -mr-20 -mt-20 group-hover:scale-110 transition-transform duration-700"></div>
           
           <div className="relative z-10 h-full flex flex-col">
-            <div className="w-16 h-16 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center mb-auto group-hover:rotate-12 transition-transform duration-300">
-              <BookOpen size={32} />
+            <div className="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center mb-auto group-hover:rotate-12 transition-transform duration-300 text-4xl">
+              📚
             </div>
             
             <div>
@@ -162,8 +162,8 @@ const App: React.FC = () => {
             </div>
           </div>
 
-          <div className="absolute bottom-12 right-12 opacity-5 scale-150 group-hover:scale-[1.7] transition-transform duration-700 text-amber-600">
-             <BookOpen size={160} />
+          <div className="absolute bottom-12 right-12 opacity-5 scale-150 group-hover:scale-[1.7] transition-transform duration-700 text-[160px] leading-none">
+             📚
           </div>
         </div>
 
@@ -175,8 +175,8 @@ const App: React.FC = () => {
           <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-50/50 rounded-full -mr-20 -mt-20 group-hover:scale-110 transition-transform duration-700"></div>
           
           <div className="relative z-10 h-full flex flex-col">
-            <div className="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-auto group-hover:rotate-12 transition-transform duration-300">
-              <LibraryIcon size={32} />
+            <div className="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mb-auto group-hover:rotate-12 transition-transform duration-300 text-4xl">
+              📖
             </div>
             
             <div>
@@ -189,8 +189,8 @@ const App: React.FC = () => {
             </div>
           </div>
 
-          <div className="absolute bottom-12 right-12 opacity-5 scale-150 group-hover:scale-[1.7] transition-transform duration-700 text-emerald-600">
-             <LibraryIcon size={160} />
+          <div className="absolute bottom-12 right-12 opacity-5 scale-150 group-hover:scale-[1.7] transition-transform duration-700 text-[160px] leading-none">
+             📖
           </div>
         </div>
       </div>
