@@ -1,0 +1,13 @@
+[
+  {
+    "id": "1",
+    "category": "GERAL",
+    "title": "Título do Documento",
+    "description": "Descrição detalhada do documento e seu conteúdo.",
+    "keywords": ["palavra-chave1", "palavra-chave2", "palavra-chave3"],
+    "status": "REALIZACAO",
+    "date": "DD/MM/AAAA",
+    "url": "/documentos/nome-do-arquivo.pdf",
+    "pages": 0
+  }
+]

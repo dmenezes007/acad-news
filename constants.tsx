@@ -16,6 +16,39 @@ import { Category, Status, Document } from './types';
 
 export const MOCK_DOCUMENTS: Document[] = [
   {
+    id: '3',
+    category: Category.INOVACAO,
+    title: 'Plano de Extensão Tecnológica',
+    description: 'Iniciativas de aproximação com o setor produtivo e transferência de tecnologia.',
+    keywords: ['Extensão', 'Inovação', 'Parceria', 'Indústria'],
+    status: Status.REALIZACAO,
+    date: '10/12/2023',
+    url: '#',
+    pages: 28
+  },
+  {
+    id: '6',
+    category: Category.POS_GRADUACAO,
+    title: 'Relatório de Pesquisas em Biotecnologia',
+    description: 'Levantamento de evidências sobre o avanço das patentes biotecnológicas no Brasil.',
+    keywords: ['Biotecnologia', 'Pesquisa', 'Evidência'],
+    status: Status.REALIZACAO,
+    date: '11/11/2023',
+    url: '#',
+    pages: 34
+  },
+  {
+    id: '5',
+    category: Category.BIBLIOTECA,
+    title: 'Acervo Digital: Teses de Patentes',
+    description: 'Catalogação das novas teses defendidas no período 2020-2023.',
+    keywords: ['Acervo', 'Biblioteca', 'Teses', 'Pesquisa'],
+    status: Status.REALIZACAO,
+    date: '05/01/2024',
+    url: '#',
+    pages: 150
+  },
+  {
     id: '1',
     category: Category.GERAL,
     title: 'Relatório de Gestão 2023',
@@ -38,17 +71,6 @@ export const MOCK_DOCUMENTS: Document[] = [
     pages: 12
   },
   {
-    id: '3',
-    category: Category.INOVACAO,
-    title: 'Plano de Extensão Tecnológica',
-    description: 'Iniciativas de aproximação com o setor produtivo e transferência de tecnologia.',
-    keywords: ['Extensão', 'Inovação', 'Parceria', 'Indústria'],
-    status: Status.REALIZACAO,
-    date: '10/12/2023',
-    url: '#',
-    pages: 28
-  },
-  {
     id: '4',
     category: Category.EDUCACAO_CORPORATIVA,
     title: 'Capacitação Interna: Inteligência Artificial',
@@ -58,28 +80,6 @@ export const MOCK_DOCUMENTS: Document[] = [
     date: '20/02/2024',
     url: '#',
     pages: 8
-  },
-  {
-    id: '5',
-    category: Category.BIBLIOTECA,
-    title: 'Acervo Digital: Teses de Patentes',
-    description: 'Catalogação das novas teses defendidas no período 2020-2023.',
-    keywords: ['Acervo', 'Biblioteca', 'Teses', 'Pesquisa'],
-    status: Status.REALIZACAO,
-    date: '05/01/2024',
-    url: '#',
-    pages: 150
-  },
-  {
-    id: '6',
-    category: Category.POS_GRADUACAO,
-    title: 'Relatório de Pesquisas em Biotecnologia',
-    description: 'Levantamento de evidências sobre o avanço das patentes biotecnológicas no Brasil.',
-    keywords: ['Biotecnologia', 'Pesquisa', 'Evidência'],
-    status: Status.REALIZACAO,
-    date: '11/11/2023',
-    url: '#',
-    pages: 34
   },
   {
     id: '7',
