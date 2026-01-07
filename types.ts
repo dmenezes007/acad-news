@@ -2,7 +2,7 @@
 export enum Category {
   GERAL = 'Geral',
   POS_GRADUACAO = 'Pós-Graduação e Pesquisa',
-  INOVACAO = 'Inovação e Extensão',
+  INOVACAO_E_EXTENSAO = 'Inovação e Extensão',
   EDUCACAO_CORPORATIVA = 'Educação Corporativa',
   BIBLIOTECA = 'Biblioteca'
 }
@@ -17,12 +17,12 @@ export interface Document {
   id: string;
   category: Category;
   title: string;
-  description: string;
-  keywords: string[];
+  description?: string;
+  keywords?: string[];
   status: Status;
-  date: string;
-  url: string;
-  pages: number;
+  date?: string;
+  url?: string;
+  pages?: number;
 }
 
 export type ModuleView = 'home' | Category;

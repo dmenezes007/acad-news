@@ -25,7 +25,10 @@ const DocumentModal: React.FC<DocumentModalProps> = ({ document, onClose }) => {
             </div>
             <div>
               <h2 className="font-bold text-slate-800 leading-tight">{document.title}</h2>
-              <p className="text-xs text-slate-500">{document.category} • {document.date}</p>
+              <p className="text-xs text-slate-500">
+                {document.category}
+                {document.date && ` • ${document.date}`}
+              </p>
             </div>
           </div>
           <div className="flex items-center gap-3">
@@ -61,7 +64,9 @@ const DocumentModal: React.FC<DocumentModalProps> = ({ document, onClose }) => {
               <h1 className="text-3xl text-slate-800 mb-2">{document.title}</h1>
               <div className="flex justify-between items-center italic text-slate-500 text-sm">
                 <span>Versão Oficial da Gestão</span>
-                <span>Página {currentPage} de {document.pages}</span>
+                {document.pages && document.pages > 0 && (
+                  <span>Página {currentPage} de {document.pages}</span>
+                )}
               </div>
             </div>
 
@@ -76,22 +81,26 @@ const DocumentModal: React.FC<DocumentModalProps> = ({ document, onClose }) => {
               <div className="h-4 w-5/6 bg-slate-100 rounded"></div>
               <div className="h-4 w-2/3 bg-slate-100 rounded"></div>
               
-              <div className="py-8">
-                <h4 className="font-bold text-slate-800 mb-4 uppercase text-sm tracking-wide">Descrição do Documento</h4>
-                <p>{document.description}</p>
-              </div>
+              {document.description && (
+                <div className="py-8">
+                  <h4 className="font-bold text-slate-800 mb-4 uppercase text-sm tracking-wide">Descrição do Documento</h4>
+                  <p>{document.description}</p>
+                </div>
+              )}
 
               <div className="grid grid-cols-2 gap-8 py-4">
-                <div className="p-4 bg-slate-50 border border-slate-100 rounded">
-                  <h5 className="font-bold text-[10px] uppercase text-slate-400 mb-2">Palavras-chave</h5>
-                  <div className="flex flex-wrap gap-2">
-                    {document.keywords.map(k => <span key={k} className="text-xs text-blue-600">#{k}</span>)}
+                {document.keywords && document.keywords.length > 0 && (
+                  <div className="p-4 bg-slate-50 border border-slate-100 rounded">
+                    <h5 className="font-bold text-[10px] uppercase text-slate-400 mb-2">Palavras-chave</h5>
+                    <div className="flex flex-wrap gap-2">
+                      {document.keywords.map(k => <span key={k} className="text-xs text-blue-600">#{k}</span>)}
+                    </div>
                   </div>
-                </div>
+                )}
                 <div className="p-4 bg-slate-50 border border-slate-100 rounded">
                   <h5 className="font-bold text-[10px] uppercase text-slate-400 mb-2">Metadata</h5>
                   <p className="text-xs text-slate-600">Status: {document.status}</p>
-                  <p className="text-xs text-slate-600">Data de Coleta: {document.date}</p>
+                  {document.date && <p className="text-xs text-slate-600">Data de Coleta: {document.date}</p>}
                 </div>
               </div>
 
@@ -111,27 +120,29 @@ const DocumentModal: React.FC<DocumentModalProps> = ({ document, onClose }) => {
         </div>
 
         {/* Footer / Pagination */}
-        <div className="px-6 py-4 border-t border-slate-100 flex items-center justify-center gap-6 bg-white sticky bottom-0">
-          <button 
-            disabled={currentPage === 1}
-            onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
-            className="flex items-center gap-1 text-sm font-medium text-slate-600 hover:text-blue-600 disabled:opacity-30 disabled:hover:text-slate-600 transition-colors"
-          >
-            <ChevronLeft size={20} /> Anterior
-          </button>
-          
-          <div className="px-4 py-1.5 bg-slate-100 rounded-full text-xs font-bold text-slate-500">
-            PÁGINA {currentPage} / {document.pages}
-          </div>
+        {document.pages && document.pages > 0 && (
+          <div className="px-6 py-4 border-t border-slate-100 flex items-center justify-center gap-6 bg-white sticky bottom-0">
+            <button 
+              disabled={currentPage === 1}
+              onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
+              className="flex items-center gap-1 text-sm font-medium text-slate-600 hover:text-blue-600 disabled:opacity-30 disabled:hover:text-slate-600 transition-colors"
+            >
+              <ChevronLeft size={20} /> Anterior
+            </button>
+            
+            <div className="px-4 py-1.5 bg-slate-100 rounded-full text-xs font-bold text-slate-500">
+              PÁGINA {currentPage} / {document.pages}
+            </div>
 
-          <button 
-            disabled={currentPage === document.pages}
-            onClick={() => setCurrentPage(prev => Math.min(document.pages, prev + 1))}
-            className="flex items-center gap-1 text-sm font-medium text-slate-600 hover:text-blue-600 disabled:opacity-30 disabled:hover:text-slate-600 transition-colors"
-          >
-            Próxima <ChevronRight size={20} />
-          </button>
-        </div>
+            <button 
+              disabled={currentPage === document.pages}
+              onClick={() => setCurrentPage(prev => Math.min(document.pages, prev + 1))}
+              className="flex items-center gap-1 text-sm font-medium text-slate-600 hover:text-blue-600 disabled:opacity-30 disabled:hover:text-slate-600 transition-colors"
+            >
+              Próxima <ChevronRight size={20} />
+            </button>
+          </div>
+        )}
 
       </div>
     </div>

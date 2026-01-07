@@ -24,24 +24,28 @@ const DocumentRow: React.FC<DocumentRowProps> = ({ doc, onClick, onDownload }) =
           <span className="text-[10px] font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded uppercase tracking-wider">
             {doc.category}
           </span>
-          <span className="text-xs text-slate-400">• {doc.date}</span>
+          {doc.date && <span className="text-xs text-slate-400">• {doc.date}</span>}
         </div>
         
         <h3 className="text-sm font-semibold text-slate-800 group-hover:text-blue-600 transition-colors truncate">
           {doc.title}
         </h3>
         
-        <p className="text-xs text-slate-500 line-clamp-1 mt-1">
-          {doc.description}
-        </p>
+        {doc.description && (
+          <p className="text-xs text-slate-500 line-clamp-1 mt-1">
+            {doc.description}
+          </p>
+        )}
 
-        <div className="flex flex-wrap gap-2 mt-2">
-          {doc.keywords.map(kw => (
-            <span key={kw} className="text-[9px] text-slate-500 bg-slate-100 px-1.5 py-0.5 rounded italic">
-              #{kw}
-            </span>
-          ))}
-        </div>
+        {doc.keywords && doc.keywords.length > 0 && (
+          <div className="flex flex-wrap gap-2 mt-2">
+            {doc.keywords.map(kw => (
+              <span key={kw} className="text-[9px] text-slate-500 bg-slate-100 px-1.5 py-0.5 rounded italic">
+                #{kw}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
 
       <div className="flex items-center gap-2 pr-2">

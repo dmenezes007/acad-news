@@ -116,9 +116,9 @@ const App: React.FC = () => {
           </div>
         </div>
 
-        {/* Quadrant 2: Inovação */}
+        {/* Quadrant 2: Inovação e Extensão */}
         <div 
-          onClick={() => handleNavigate(Category.INOVACAO)}
+          onClick={() => handleNavigate(Category.INOVACAO_E_EXTENSAO)}
           className="group relative h-96 bg-white border border-slate-200 rounded-[2rem] p-8 shadow-sm hover:shadow-xl hover:border-cyan-400 transition-all duration-500 cursor-pointer overflow-hidden flex flex-col"
           style={{
             backgroundImage: 'linear-gradient(rgba(148, 163, 184, 0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(148, 163, 184, 0.15) 1px, transparent 1px)',
