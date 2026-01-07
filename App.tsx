@@ -65,6 +65,10 @@ const App: React.FC = () => {
       <div 
         onClick={() => handleNavigate(Category.GERAL)}
         className="bg-slate-900 rounded-[2rem] p-10 text-white flex flex-col md:flex-row items-center gap-8 relative overflow-hidden group cursor-pointer"
+        style={{
+          backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px)',
+          backgroundSize: '20px 20px'
+        }}
       >
         <div className="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-10 transition-opacity duration-700"></div>
         <div className="flex-grow z-10">
