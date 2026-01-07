@@ -93,7 +93,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
           {/* Footer */}
           <div className="mt-6 pt-6 border-t border-slate-100">
             <p className="text-xs text-slate-400 text-center">
-              Sistema de gestão de informações acadêmicas
+              Contém Informações Classificadas
             </p>
           </div>
         </div>
