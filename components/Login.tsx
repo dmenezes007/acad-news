@@ -42,7 +42,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
             <div className="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
               <Lock size={32} />
             </div>
-            <h1 className="text-3xl font-bold text-slate-900 mb-2" style={{ fontFamily: 'Fira Mono, monospace' }}>
+            <h1 className="text-3xl font-bold text-slate-900 mb-2" style={{ fontFamily: 'Roboto Mono, monospace', fontWeight: 300 }}>
               ACAD VIEW
             </h1>
             <p className="text-sm text-slate-600 font-medium">
