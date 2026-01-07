@@ -56,8 +56,8 @@ const App: React.FC = () => {
         <h1 className="text-4xl font-extrabold text-slate-900 tracking-tight">
           ACAD VIEW
         </h1>
-        <p className="text-lg text-slate-500 max-w-2xl font-medium leading-relaxed">
-          Coletânea de dados, fatos, eventos e evidências da atual gestão da Academia do INPI.
+        <p className="text-lg text-slate-500 font-medium leading-relaxed">
+          Coletânea de dados, fatos, eventos e evidências gerenciais e de controle da Coordenação da Academia do INPI.
         </p>
       </header>
 
