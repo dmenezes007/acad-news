@@ -24,10 +24,6 @@ const App: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedDoc, setSelectedDoc] = useState<Document | null>(null);
 
-  if (!isAuthenticated) {
-    return <Login onLogin={() => setIsAuthenticated(true)} />;
-  }
-
   const handleNavigate = (view: ModuleView) => {
     setCurrentView(view);
     setSearchTerm('');
@@ -250,6 +246,11 @@ const App: React.FC = () => {
       </div>
     </div>
   );
+
+  // Verificação de autenticação
+  if (!isAuthenticated) {
+    return <Login onLogin={() => setIsAuthenticated(true)} />;
+  }
 
   return (
     <div className="min-h-screen bg-slate-50">
