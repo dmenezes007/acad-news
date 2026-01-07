@@ -61,6 +61,29 @@ const App: React.FC = () => {
         </p>
       </header>
 
+      {/* Featured/Geral Section */}
+      <div 
+        onClick={() => handleNavigate(Category.GERAL)}
+        className="bg-slate-900 rounded-[2rem] p-10 text-white flex flex-col md:flex-row items-center gap-8 relative overflow-hidden group cursor-pointer"
+      >
+        <div className="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-10 transition-opacity duration-700"></div>
+        <div className="flex-grow z-10">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-500 text-[10px] font-bold uppercase tracking-widest rounded-full mb-4">
+            Módulo Geral
+          </div>
+          <h2 className="text-4xl font-bold mb-4">Visão Consolidada</h2>
+          <p className="text-slate-300 max-w-xl text-lg mb-8 leading-relaxed">
+            Acesse as informações comuns e transversais a todos os módulos, incluindo relatórios anuais de gestão e planejamento estratégico.
+          </p>
+          <div className="flex items-center gap-2 px-6 py-3 bg-white text-slate-900 font-bold rounded-xl w-fit group-hover:scale-105 transition-transform">
+            Entrar no Módulo Geral <ArrowRight size={20} />
+          </div>
+        </div>
+        <div className="w-full md:w-1/3 flex justify-center z-10">
+           <LayoutGrid size={180} className="text-slate-800" />
+        </div>
+      </div>
+
       {/* Bento Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Quadrant 1: Pós-Graduação */}
@@ -169,29 +192,6 @@ const App: React.FC = () => {
           <div className="absolute bottom-12 right-12 opacity-5 scale-150 group-hover:scale-[1.7] transition-transform duration-700 text-emerald-600">
              <LibraryIcon size={160} />
           </div>
-        </div>
-      </div>
-      
-      {/* Featured/Geral Section */}
-      <div className="bg-slate-900 rounded-[2rem] p-10 text-white flex flex-col md:flex-row items-center gap-8 relative overflow-hidden group">
-        <div className="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-10 transition-opacity duration-700"></div>
-        <div className="flex-grow z-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-500 text-[10px] font-bold uppercase tracking-widest rounded-full mb-4">
-            Módulo Geral
-          </div>
-          <h2 className="text-4xl font-bold mb-4">Visão Consolidada</h2>
-          <p className="text-slate-300 max-w-xl text-lg mb-8 leading-relaxed">
-            Acesse as informações comuns e transversais a todos os módulos, incluindo relatórios anuais de gestão e planejamento estratégico.
-          </p>
-          <button 
-            onClick={() => handleNavigate(Category.GERAL)}
-            className="px-8 py-3 bg-white text-slate-900 font-bold rounded-xl hover:bg-slate-100 transition-all transform hover:scale-105"
-          >
-            Entrar no Módulo Geral
-          </button>
-        </div>
-        <div className="w-full md:w-1/3 flex justify-center z-10">
-           <LayoutGrid size={180} className="text-slate-800" />
         </div>
       </div>
     </div>
