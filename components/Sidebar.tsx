@@ -14,7 +14,7 @@ const Sidebar: React.FC<SidebarProps> = ({ currentView, onViewChange }) => {
       <div className="mb-10 text-blue-600">
         <img 
           src="https://www.gov.br/inpi/pt-br/assuntos/fale-conosco/arquivos-de-logo-do-inpi/inpi_cor_positiva.png" 
-          alt="INPI Logo" 
+          alt="" 
           className="w-10 h-auto grayscale brightness-50"
         />
       </div>
@@ -42,9 +42,12 @@ const Sidebar: React.FC<SidebarProps> = ({ currentView, onViewChange }) => {
       </nav>
       
       <div className="mt-auto">
-        <div className="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-[10px] font-bold text-slate-500">
-          AC
-        </div>
+        <img 
+          src="/logo/logo-user.jpg" 
+          alt="User" 
+          className="w-8 h-8 object-cover"
+          style={{ borderRadius: '50%' }}
+        />
       </div>
     </aside>
   );
