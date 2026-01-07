@@ -273,11 +273,11 @@ const App: React.FC = () => {
         <div className="flex flex-col items-center gap-4">
           <img 
             src="https://www.gov.br/inpi/pt-br/assuntos/fale-conosco/arquivos-de-logo-do-inpi/inpi_cor_positiva.png" 
-            alt="Logo INPI" 
+            alt="" 
             className="h-10 opacity-20 grayscale"
           />
           <p className="text-[10px] uppercase font-bold tracking-widest">
-            Academia do INPI © 2024 • ACAD VIEW
+            Davison Menezes © 2024 • ACAD VIEW
           </p>
         </div>
       </footer>

@@ -14,7 +14,7 @@ const DocumentModal: React.FC<DocumentModalProps> = ({ document, onClose }) => {
   if (!document) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm" style={{ fontFamily: 'Inter, sans-serif' }}>
       <div className="bg-white w-full max-w-5xl h-[90vh] rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-in fade-in zoom-in duration-300">
         
         {/* Header */}

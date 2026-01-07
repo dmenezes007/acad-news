@@ -26,14 +26,6 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 flex items-center justify-center p-4">
       <div className="w-full max-w-md">
-        {/* Logo INPI */}
-        <div className="flex justify-center mb-8">
-          <img 
-            src="https://www.gov.br/inpi/pt-br/assuntos/fale-conosco/arquivos-de-logo-do-inpi/inpi_cor_positiva.png" 
-            alt="" 
-            className="w-24 h-auto"
-          />
-        </div>
 
         {/* Card de Login */}
         <div className="bg-white rounded-3xl shadow-xl border border-slate-200 p-8">
@@ -108,7 +100,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
 
         {/* Bottom text */}
         <p className="text-center text-sm text-slate-500 mt-6">
-          © 2026 INPI - Instituto Nacional da Propriedade Industrial
+          Davison Menezes © 2024 • ACAD VIEW
         </p>
       </div>
     </div>
