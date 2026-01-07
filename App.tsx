@@ -233,7 +233,6 @@ const App: React.FC = () => {
                 key={doc.id} 
                 doc={doc} 
                 onClick={(d) => setSelectedDoc(d)}
-                onDownload={(d) => alert(`Iniciando download de: ${d.title}`)}
               />
             ))}
           </div>

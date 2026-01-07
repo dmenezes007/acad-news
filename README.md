@@ -1,4 +1,4 @@
-# ACAD VIEW - Academia do INPI
+# ACAD VIEW - Davison Menezes
 
 Uma coletânea de dados, fatos, eventos e evidências da atual gestão da Academia do INPI, organizada em módulos interativos.
 

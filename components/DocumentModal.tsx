@@ -29,9 +29,17 @@ const DocumentModal: React.FC<DocumentModalProps> = ({ document, onClose }) => {
             </div>
           </div>
           <div className="flex items-center gap-3">
-            <button className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-slate-600 hover:bg-slate-100 rounded-lg transition-colors">
-              <Download size={16} /> Baixar PDF
-            </button>
+            {document.url && document.url !== '#' && (
+              <a 
+                href={document.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-slate-600 hover:bg-slate-100 rounded-lg transition-colors"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <Download size={16} /> Baixar
+              </a>
+            )}
             <button 
               onClick={onClose}
               className="p-2 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-full transition-all"

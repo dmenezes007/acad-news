@@ -1,13 +1,12 @@
 
 import React from 'react';
-import { Eye, Download, FileText } from 'lucide-react';
+import { Eye, FileText } from 'lucide-react';
 import { Document } from '../types';
 import PulseDot from './PulseDot';
 
 interface DocumentRowProps {
   doc: Document;
   onClick: (doc: Document) => void;
-  onDownload: (doc: Document) => void;
 }
 
 const DocumentRow: React.FC<DocumentRowProps> = ({ doc, onClick, onDownload }) => {
@@ -55,16 +54,6 @@ const DocumentRow: React.FC<DocumentRowProps> = ({ doc, onClick, onDownload }) =
           title="Visualizar"
         >
           <Eye size={18} />
-        </button>
-        <button 
-          onClick={(e) => {
-            e.stopPropagation();
-            onDownload(doc);
-          }}
-          className="p-2 text-slate-400 hover:text-green-600 hover:bg-green-50 rounded-lg transition-colors"
-          title="Download"
-        >
-          <Download size={18} />
         </button>
       </div>
     </div>
