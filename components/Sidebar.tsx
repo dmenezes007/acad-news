@@ -44,7 +44,7 @@ const Sidebar: React.FC<SidebarProps> = ({ currentView, onViewChange }) => {
       <div className="mt-auto">
         <img 
           src="/logo/logo-user.jpg" 
-          alt="User" 
+          alt="Davison Menezes" 
           className="w-8 h-8 object-cover"
           style={{ borderRadius: '50%' }}
         />
