@@ -54,18 +54,18 @@ const DocumentModal: React.FC<DocumentModalProps> = ({ document, onClose }) => {
           {/* Simulated PDF Page */}
           <div className="bg-white w-[700px] min-h-[900px] shadow-lg rounded-sm border border-slate-200 p-12 flex flex-col mb-8 relative">
             <div className="absolute top-4 right-4 text-[10px] text-slate-300 uppercase tracking-widest font-bold">
-              ACAD VIEW - INPI
+              ACAD VIEW
             </div>
             
             <div className="mb-12 border-b-2 border-slate-800 pb-4">
-              <h1 className="text-3xl font-serif text-slate-800 mb-2">{document.title}</h1>
-              <div className="flex justify-between items-center italic text-slate-500 text-sm font-serif">
+              <h1 className="text-3xl text-slate-800 mb-2">{document.title}</h1>
+              <div className="flex justify-between items-center italic text-slate-500 text-sm">
                 <span>Versão Oficial da Gestão</span>
                 <span>Página {currentPage} de {document.pages}</span>
               </div>
             </div>
 
-            <div className="flex-grow font-serif text-slate-700 leading-relaxed space-y-6">
+            <div className="flex-grow text-slate-700 leading-relaxed space-y-6">
               <p className="first-letter:text-5xl first-letter:font-bold first-letter:float-left first-letter:mr-3 first-letter:text-slate-800">
                 Este é um simulador de visualização de documentos para a aplicação ACAD VIEW. 
                 Os documentos reais seriam carregados via PDF.js ou similar para garantir a experiência de folhear páginas.
@@ -103,7 +103,7 @@ const DocumentModal: React.FC<DocumentModalProps> = ({ document, onClose }) => {
             <div className="mt-auto pt-8 border-t border-slate-100 flex justify-center opacity-30 grayscale">
               <img 
                 src="https://www.gov.br/inpi/pt-br/assuntos/fale-conosco/arquivos-de-logo-do-inpi/inpi_cor_positiva.png" 
-                alt="INPI" 
+                alt="" 
                 className="h-8"
               />
             </div>
