@@ -1,0 +1,6 @@
+id,category,title,description,keywords,status,date,url,pages
+1,GERAL,Relatório de Gestão 2023,Panorama consolidado das atividades da Academia no último exercício.,"Gestão,Relatório,Anual,Metas",REALIZACAO,15/01/2024,https://drive.google.com/file/d/SEU_ID_AQUI/view,45
+2,POS_GRADUACAO,Edital Mestrado Profissional 2024,Regras e cronograma para o processo seletivo do Mestrado Profissional em PI e Inovação.,"Mestrado,Edital,Pós-Graduação,Seleção",PONTO_ATENCAO,02/02/2024,https://drive.google.com/file/d/SEU_ID_AQUI/view,12
+3,INOVACAO,Plano de Extensão Tecnológica,Iniciativas de aproximação com o setor produtivo e transferência de tecnologia.,"Extensão,Inovação,Parceria,Indústria",REALIZACAO,10/12/2023,https://drive.google.com/file/d/SEU_ID_AQUI/view,28
+4,EDUCACAO_CORPORATIVA,Capacitação Interna: Inteligência Artificial,Programa de treinamento para examinadores sobre ferramentas de IA generativa.,"IA,Treinamento,Servidores,Capacitação",CASO_CRITICO,20/02/2024,https://drive.google.com/file/d/SEU_ID_AQUI/view,8
+5,BIBLIOTECA,Acervo Digital: Teses de Patentes,Catalogação das novas teses defendidas no período 2020-2023.,"Acervo,Biblioteca,Teses,Pesquisa",REALIZACAO,05/01/2024,https://drive.google.com/file/d/SEU_ID_AQUI/view,150

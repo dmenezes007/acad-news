@@ -280,6 +280,18 @@ Antes de fazer o commit, verifique:
 
 ---
 
+## 📊 PLANILHAS DE CONTROLE
+
+Na pasta `templates/` você encontrará:
+- **documents-template.csv** - Planilha modelo para Excel/Google Sheets
+- **documents-template.tsv** - Alternativa com separação por tabs
+- **converter.py** - Script Python para conversão automática
+- **README.md** - Guia completo de uso das planilhas
+
+Veja `templates/README.md` para instruções detalhadas sobre como usar os templates.
+
+---
+
 ## 🆘 SOLUÇÃO DE PROBLEMAS
 
 ### Erro: "Cannot read property 'map' of undefined"
@@ -304,6 +316,9 @@ Antes de fazer o commit, verifique:
 
 **P: Posso usar pastas privadas?**
 R: Não. Os documentos precisam ter acesso público com link compartilhável.
+
+**P: Posso usar links web diretos em vez de Google Drive?**
+R: Sim! A aplicação aceita qualquer URL válida: Google Drive, links diretos para PDFs em servidores web, SharePoint, OneDrive, etc. Basta que a URL seja acessível.
 
 **P: E se eu adicionar novos documentos depois?**
 R: Basta editar o documents.json, adicionar o novo documento respeitando a ordem cronológica, e fazer commit.

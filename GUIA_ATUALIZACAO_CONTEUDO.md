@@ -157,8 +157,11 @@ Use padrão sequencial ou descritivo:
 
 ### URLs de Documentos
 - **Locais**: Sempre iniciar com `/` (ex: `/documentos/arquivo.pdf`)
-- **Externas**: URL completa com `https://`
+- **Google Drive**: `https://drive.google.com/file/d/ID/view`
+- **Links Web**: Qualquer URL válida (ex: `https://portal.inpi.gov.br/docs/arquivo.pdf`)
+- **SharePoint/OneDrive**: URLs de compartilhamento
 - Testar cada link antes de adicionar ao JSON
+- **A aplicação aceita qualquer URL válida**
 
 ### Datas
 - Formato: `DD/MM/AAAA`
