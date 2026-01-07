@@ -149,7 +149,7 @@ const App: React.FC = () => {
           
           <div className="relative z-10 h-full flex flex-col">
             <div className="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center mb-auto group-hover:rotate-12 transition-transform duration-300 overflow-hidden p-2">
-              <img src="https://img.icons8.com/3d-fluency/94/books.png" alt="" className="w-full h-full object-contain" />
+              <img src="https://img.icons8.com/3d-fluency/94/classroom.png" alt="" className="w-full h-full object-contain" />
             </div>
             
             <div>
@@ -163,7 +163,7 @@ const App: React.FC = () => {
           </div>
 
           <div className="absolute bottom-0 right-0 opacity-5 scale-150 group-hover:scale-[1.7] transition-transform duration-700 w-64 h-64">
-             <img src="https://img.icons8.com/3d-fluency/94/books.png" alt="" className="w-full h-full object-contain" />
+             <img src="https://img.icons8.com/3d-fluency/94/classroom.png" alt="" className="w-full h-full object-contain" />
           </div>
         </div>
 
