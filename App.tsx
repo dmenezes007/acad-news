@@ -53,7 +53,7 @@ const App: React.FC = () => {
   const renderHome = () => (
     <div className="space-y-12 max-w-7xl mx-auto">
       <header className="space-y-2">
-        <h1 className="text-4xl font-extrabold text-slate-900 tracking-tight">
+        <h1 className="text-4xl font-extrabold text-slate-900 tracking-tight" style={{ fontFamily: 'Fira Mono, monospace' }}>
           ACAD VIEW
         </h1>
         <p className="text-lg text-slate-500 font-medium leading-relaxed">
